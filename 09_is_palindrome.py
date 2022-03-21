@@ -31,6 +31,5 @@ def is_palindrome(phrase):
     reverse_phrase = list_phrase[::-1]
 
     if reverse_phrase == list_phrase:
-        return True
-    
+        return True  
     return False
