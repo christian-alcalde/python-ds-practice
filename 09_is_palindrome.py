@@ -25,11 +25,12 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    # can use slice on strings instead
     no_space_phrase = phrase.replace(" ", "")
     lower_case_phrase = no_space_phrase.lower()
     list_phrase = list(lower_case_phrase)
     reverse_phrase = list_phrase[::-1]
 
     if reverse_phrase == list_phrase:
-        return True  
+        return True
     return False

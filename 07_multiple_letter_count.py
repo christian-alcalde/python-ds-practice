@@ -7,6 +7,7 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    # could use dictionary comprehension
     dict = {}
     for ltr in phrase:
         if not dict.get(ltr):
